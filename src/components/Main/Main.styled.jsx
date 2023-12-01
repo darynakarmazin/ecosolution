@@ -44,7 +44,6 @@ export const MainHeader = styled.h1`
 `;
 
 export const Description = styled.p`
-  color: #173d33;
   text-align: justify;
   font-size: 16px;
   line-height: normal;
