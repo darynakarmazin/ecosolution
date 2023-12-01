@@ -1,23 +1,35 @@
 {
   "files": {
     "main.css": "/ecosolution/static/css/main.46d10a1d.css",
-    "main.js": "/ecosolution/static/js/main.c1e598f9.js",
+    "main.js": "/ecosolution/static/js/main.b7d7dd62.js",
     "static/media/deck-wind-turbine-clean-energy@2x.jpg": "/ecosolution/static/media/deck-wind-turbine-clean-energy@2x.8e58061f272023586bd3.jpg",
     "static/media/tab-wind-turbine-clean-energy@2x.jpg": "/ecosolution/static/media/tab-wind-turbine-clean-energy@2x.ee592ecbfb9db6d97e90.jpg",
     "static/media/deck-wind-turbine-clean-energy.jpg": "/ecosolution/static/media/deck-wind-turbine-clean-energy.a6a61f7396ce012373ac.jpg",
+    "static/media/desc-man-worker-firld-by-solar-panels@2x.jpg": "/ecosolution/static/media/desc-man-worker-firld-by-solar-panels@2x.8f663b49d45cdfdfca32.jpg",
+    "static/media/desc-wind-farms-fields@2x.jpg": "/ecosolution/static/media/desc-wind-farms-fields@2x.d60c16f3d120eae8cf67.jpg",
     "static/media/mob-wind-turbine-clean-energy@2x.jpg": "/ecosolution/static/media/mob-wind-turbine-clean-energy@2x.5e4637579f525fb8c5ab.jpg",
     "static/media/tab-wind-turbine-clean-energy.jpg": "/ecosolution/static/media/tab-wind-turbine-clean-energy.788d44764a89bef35cc1.jpg",
+    "static/media/tab-man-worker-firld-by-solar-panels@2x.jpg": "/ecosolution/static/media/tab-man-worker-firld-by-solar-panels@2x.6d12ffe61f8174c2416e.jpg",
+    "static/media/tab-wind-farms-fields@2x.jpg": "/ecosolution/static/media/tab-wind-farms-fields@2x.7ca6cfcf06697c6bcbe8.jpg",
+    "static/media/desc-man-worker-firld-by-solar-panels.jpg": "/ecosolution/static/media/desc-man-worker-firld-by-solar-panels.04df9fc204bb9e93fdec.jpg",
+    "static/media/desc-wind-farms-fields.jpg": "/ecosolution/static/media/desc-wind-farms-fields.f0bbdc10c57ba0c38c7c.jpg",
     "static/media/mob-wind-turbine-clean-energy.jpg": "/ecosolution/static/media/mob-wind-turbine-clean-energy.305ae12646f540bf9566.jpg",
+    "static/media/tab-man-worker-firld-by-solar-panels.jpg": "/ecosolution/static/media/tab-man-worker-firld-by-solar-panels.223e4b4aa40e10bcab61.jpg",
+    "static/media/tab-wind-farms-fields.jpg": "/ecosolution/static/media/tab-wind-farms-fields.fd704129bb5d93d555a9.jpg",
     "static/media/logo.svg": "/ecosolution/static/media/logo.638cc1bbcbc5b1a1aa81d1a7b58d7833.svg",
+    "static/media/innovation.svg": "/ecosolution/static/media/innovation.e483f767e02fc382fb89209b71579ee6.svg",
+    "static/media/responsibility.svg": "/ecosolution/static/media/responsibility.e20cb0fa1a0b3bb1ea550cf284427b54.svg",
+    "static/media/quality.svg": "/ecosolution/static/media/quality.91f97cf95a567b1f73be2e9d63a041dd.svg",
+    "static/media/openness.svg": "/ecosolution/static/media/openness.e09b2e717d0e2b3e1450b28fdf496960.svg",
     "index.html": "/ecosolution/index.html",
     "static/media/arrow.svg": "/ecosolution/static/media/arrow.67bf75548c387f415fae98bcfa940ecc.svg",
     "static/media/arrow-right.svg": "/ecosolution/static/media/arrow-right.d1d4ddb9db0f23d2ae0873672515c88a.svg",
     "static/media/menu.svg": "/ecosolution/static/media/menu.03e96d8790194653b6ccfb63ad04f462.svg",
     "main.46d10a1d.css.map": "/ecosolution/static/css/main.46d10a1d.css.map",
-    "main.c1e598f9.js.map": "/ecosolution/static/js/main.c1e598f9.js.map"
+    "main.b7d7dd62.js.map": "/ecosolution/static/js/main.b7d7dd62.js.map"
   },
   "entrypoints": [
     "static/css/main.46d10a1d.css",
-    "static/js/main.c1e598f9.js"
+    "static/js/main.b7d7dd62.js"
   ]
 }
