@@ -57,6 +57,7 @@ export const TouchLink = styled.a`
       background: #97d28b;
     }
   }
+
   @media screen and (min-width: 768px) {
     display: inline-flex;
   }

@@ -1,5 +1,5 @@
 function Cases() {
-  return <div>Cases</div>;
+  return <div id="cases">Cases</div>;
 }
 
 export default Cases;

@@ -16,7 +16,7 @@ function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 100);
+      setIsScrolled(scrollPosition > 36);
     };
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -38,7 +38,7 @@ function Header() {
           <TouchLink href="#">
             Get in touch
             <div>
-              <img src={ArrowIcon} alt="" />
+              <img src={ArrowIcon} alt="arrow icon" />
             </div>
           </TouchLink>
         </SideButtons>
