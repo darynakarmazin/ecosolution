@@ -3,7 +3,8 @@
 :root {
   /* Font colors */
   --main-font-color: #173d33;
-  --secondary-font-color: #97d28b;
+  --items-color: #dcefd8;
+  --hover-items-color: #97d28b;
 
   /* Background colors */
   --main-background-color: #f3f5fa;
@@ -23,8 +24,8 @@
 
 body {
   margin: 0;
-  background-color: var(--main-background-color);
-  color: var(--main-font-color);
+  background-color: var(--main-background-color, #f3f5fa);
+  color: var(--main-font-color, #173d33);
 }
 
 p {

@@ -9,16 +9,18 @@ import Footer from './Footer/Footer.jsx';
 
 function App() {
   return (
-    <div className="container">
+    <>
       <Header />
-      <Main />
-      <AboutValues />
-      <Electricity />
-      <Cases />
-      <FAQ />
-      <ContactUs />
+      <main className="container">
+        <Main />
+        <AboutValues />
+        <Electricity />
+        <Cases />
+        <FAQ />
+        <ContactUs />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
