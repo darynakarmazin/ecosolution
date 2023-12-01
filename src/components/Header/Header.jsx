@@ -33,6 +33,7 @@ function Header() {
           src={LogoIcon}
           alt="ecosolution company logo with phrase GREENERGY FOR LIFE"
         />
+
         <SideButtons>
           <BurgerMenu />
           <TouchLink href="#">

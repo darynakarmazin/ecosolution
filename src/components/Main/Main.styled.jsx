@@ -21,6 +21,7 @@ export const MainWrapper = styled.div`
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    justify-content: space-between;
   }
 `;
 
@@ -47,14 +48,18 @@ export const Description = styled.p`
   text-align: justify;
   font-size: 16px;
   line-height: normal;
+  letter-spacing: -0.64px;
   margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
     width: 342px;
+    margin-right: 96px;
+    margin-bottom: 43px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 363px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -121,6 +126,16 @@ export const ContsctLinks = styled.div`
     font-size: 16px;
     line-height: normal;
     letter-spacing: -0.64px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 0 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 12px 0 36px;
   }
 `;
 
