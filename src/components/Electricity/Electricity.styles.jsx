@@ -81,16 +81,19 @@ export const ElectricityAmount = styled.p`
     color: var(--hover-items-color);
     text-align: center;
     font-size: 48px;
+    width: 256px;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
 
     @media screen and (min-width: 768px) {
       font-size: 100px;
+      width: 533px;
     }
 
     @media screen and (min-width: 1280px) {
       font-size: 164px;
+      width: 874px;
     }
   }
 `;
