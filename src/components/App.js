@@ -9,7 +9,7 @@ import Footer from './Footer/Footer.jsx';
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Header />
       <Main />
       <AboutValues />
