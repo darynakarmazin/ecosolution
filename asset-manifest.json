@@ -1,17 +1,27 @@
 {
   "files": {
-    "main.css": "/ecosolution/static/css/main.46d10a1d.css",
-    "main.js": "/ecosolution/static/js/main.076c24cd.js",
+    "main.css": "/ecosolution/static/css/main.279897ad.css",
+    "main.js": "/ecosolution/static/js/main.c958fdac.js",
     "static/media/deck-wind-turbine-clean-energy@2x.jpg": "/ecosolution/static/media/deck-wind-turbine-clean-energy@2x.8e58061f272023586bd3.jpg",
     "static/media/tab-wind-turbine-clean-energy@2x.jpg": "/ecosolution/static/media/tab-wind-turbine-clean-energy@2x.ee592ecbfb9db6d97e90.jpg",
+    "static/media/bosch@2x.jpg": "/ecosolution/static/media/bosch@2x.c2635824af773852d31d.jpg",
     "static/media/deck-wind-turbine-clean-energy.jpg": "/ecosolution/static/media/deck-wind-turbine-clean-energy.a6a61f7396ce012373ac.jpg",
+    "static/media/biotech@2x.jpg": "/ecosolution/static/media/biotech@2x.11146683e7fca2bf607d.jpg",
+    "static/media/healthy-farm@2x.jpg": "/ecosolution/static/media/healthy-farm@2x.2da3dfcc18151fa089de.jpg",
+    "static/media/enterprise-biotech@2x.jpg": "/ecosolution/static/media/enterprise-biotech@2x.8477c65e2cbc1a77052c.jpg",
+    "static/media/zakhidnyi-buh@2x.jpg": "/ecosolution/static/media/zakhidnyi-buh@2x.ce715c26603edfb84380.jpg",
     "static/media/desc-man-worker-firld-by-solar-panels@2x.jpg": "/ecosolution/static/media/desc-man-worker-firld-by-solar-panels@2x.8f663b49d45cdfdfca32.jpg",
     "static/media/desc-wind-farms-fields@2x.jpg": "/ecosolution/static/media/desc-wind-farms-fields@2x.d60c16f3d120eae8cf67.jpg",
     "static/media/mob-wind-turbine-clean-energy@2x.jpg": "/ecosolution/static/media/mob-wind-turbine-clean-energy@2x.5e4637579f525fb8c5ab.jpg",
     "static/media/tab-wind-turbine-clean-energy.jpg": "/ecosolution/static/media/tab-wind-turbine-clean-energy.788d44764a89bef35cc1.jpg",
+    "static/media/bosch.jpg": "/ecosolution/static/media/bosch.05007554c0d03c0b7e95.jpg",
     "static/media/tab-man-worker-firld-by-solar-panels@2x.jpg": "/ecosolution/static/media/tab-man-worker-firld-by-solar-panels@2x.6d12ffe61f8174c2416e.jpg",
+    "static/media/biotech.jpg": "/ecosolution/static/media/biotech.6a6a30db215371b5569d.jpg",
     "static/media/tab-wind-farms-fields@2x.jpg": "/ecosolution/static/media/tab-wind-farms-fields@2x.7ca6cfcf06697c6bcbe8.jpg",
+    "static/media/enterprise-biotech.jpg": "/ecosolution/static/media/enterprise-biotech.5879bfaf4639f7709409.jpg",
     "static/media/desc-man-worker-firld-by-solar-panels.jpg": "/ecosolution/static/media/desc-man-worker-firld-by-solar-panels.04df9fc204bb9e93fdec.jpg",
+    "static/media/healthy-farm.jpg": "/ecosolution/static/media/healthy-farm.52c98f10a52b1ef15640.jpg",
+    "static/media/zakhidnyi-buh.jpg": "/ecosolution/static/media/zakhidnyi-buh.ebe3ab00ef04f95ba425.jpg",
     "static/media/desc-wind-farms-fields.jpg": "/ecosolution/static/media/desc-wind-farms-fields.f0bbdc10c57ba0c38c7c.jpg",
     "static/media/mob-wind-turbine-clean-energy.jpg": "/ecosolution/static/media/mob-wind-turbine-clean-energy.305ae12646f540bf9566.jpg",
     "static/media/tab-man-worker-firld-by-solar-panels.jpg": "/ecosolution/static/media/tab-man-worker-firld-by-solar-panels.223e4b4aa40e10bcab61.jpg",
@@ -25,11 +35,11 @@
     "static/media/arrow.svg": "/ecosolution/static/media/arrow.67bf75548c387f415fae98bcfa940ecc.svg",
     "static/media/arrow-right.svg": "/ecosolution/static/media/arrow-right.d1d4ddb9db0f23d2ae0873672515c88a.svg",
     "static/media/menu.svg": "/ecosolution/static/media/menu.03e96d8790194653b6ccfb63ad04f462.svg",
-    "main.46d10a1d.css.map": "/ecosolution/static/css/main.46d10a1d.css.map",
-    "main.076c24cd.js.map": "/ecosolution/static/js/main.076c24cd.js.map"
+    "main.279897ad.css.map": "/ecosolution/static/css/main.279897ad.css.map",
+    "main.c958fdac.js.map": "/ecosolution/static/js/main.c958fdac.js.map"
   },
   "entrypoints": [
-    "static/css/main.46d10a1d.css",
-    "static/js/main.076c24cd.js"
+    "static/css/main.279897ad.css",
+    "static/js/main.c958fdac.js"
   ]
 }
