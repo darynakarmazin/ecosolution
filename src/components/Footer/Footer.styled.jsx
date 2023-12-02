@@ -8,9 +8,11 @@ export const FooterWrapper = styled.footer`
 `;
 
 export const Wrapper = styled.div`
+  width: 100%;
   padding-top: 16px;
   border-top: 1px solid var(--hover-items-color);
   display: flex;
+  gap: 9px;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24px;
