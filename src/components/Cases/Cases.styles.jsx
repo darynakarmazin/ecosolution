@@ -35,7 +35,8 @@ export const CasesTitle = styled.h2`
 
 export const CasesList = styled.ul`
   display: flex;
-  flex-wrap: wrap;
+  overflow: hidden;
+//   flex-wrap: wrap;
   gap: 24px;
 
   @media screen and (min-width: 768px) {
@@ -83,6 +84,7 @@ export const CasesItemWrapper = styled.div`
 
 export const CasesDescription = styled.div`
   display: flex;
+  gap: 61px;
   justify-content: space-between;
   height: 87px;
   border-bottom: 1px solid var(--hover-items-color);
