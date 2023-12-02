@@ -8,8 +8,7 @@ import {
   CardIcon,
   CardText,
   CardTitle,
-  GridContainerFirst,
-  GridContainerSecond,
+  GridContainer,
   Image,
 } from './AboutValues.styles';
 import OpennessIcon from '../../img/about/openness.svg';
@@ -40,7 +39,7 @@ function AboutValues() {
           meet the world's energy needs.
         </AboutDescription>
       </AboutHeader>
-      <GridContainerFirst>
+      <GridContainer>
         <Card>
           <CardHeader>
             <CardIcon src={OpennessIcon} alt="maximize circle" />
@@ -81,8 +80,7 @@ function AboutValues() {
             <img src={WindfarmsImgDeck} alt="wind farms fields" />
           </picture>
         </Image>
-      </GridContainerFirst>
-      <GridContainerSecond>
+
         <Image>
           <picture>
             <source
@@ -125,7 +123,7 @@ function AboutValues() {
             best in our business
           </CardText>
         </Card>
-      </GridContainerSecond>
+      </GridContainer>
     </AboutSection>
   );
 }

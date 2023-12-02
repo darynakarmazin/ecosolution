@@ -61,37 +61,21 @@ export const AboutDescription = styled.p`
   }
 `;
 
-export const GridContainerFirst = styled.div`
+export const GridContainer= styled.div`
   display: grid;
-  grid-template-rows: repeat(2, auto);
-  grid-template-columns: calc(50% - 12px) calc(50% - 12px);
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
 
-  @media screen and (min-width: 768px) {
-    grid-template-columns: 159px 159px 342px;
-  }
+      @media screen and (min-width: 768px) {
+          grid-template-columns: repeat(4, 1fr);
+      }
+      @media screen and (min-width: 1280px) {
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 48px;
+      }
 
-  @media screen and (min-width: 1280px) {
-    grid-template-columns: 274px 274px 596px;
-    gap: 48px;
-  }
 `;
 
-export const GridContainerSecond = styled.div`
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-  grid-template-columns: calc(50% - 12px) calc(50% - 12px);
-  column-gap: 24px;
-
-  @media screen and (min-width: 768px) {
-    grid-template-columns: 342px 159px 159px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    grid-template-columns: 596px 274px 274px;
-    column-gap: 48px;
-  }
-`;
 
 export const Card = styled.div`
   padding: 12px;
@@ -111,6 +95,7 @@ export const Card = styled.div`
 
 export const Image = styled.div`
   display: none;
+  grid-column: span 2;
 
   @media screen and (min-width: 768px) {
     display: flex;
