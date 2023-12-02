@@ -33,6 +33,8 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
 
+import { useMediaQuery } from 'react-responsive';
+
 function Cases() {
   const slides = [
     {
@@ -90,6 +92,16 @@ function Cases() {
 
   const [count, setCount] = useState(1);
 
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
+  let slidesPerView = 2;
+
+  if (isMobile) {
+    slidesPerView = 1;
+  } else  {
+    slidesPerView = 2;
+  }
+
   return (
     <CasesSection>
 
@@ -109,7 +121,7 @@ function Cases() {
 
       <Swiper
         spaceBetween={24}
-        slidesPerView={2}
+        slidesPerView={slidesPerView}
         loop={true}
         onSlideChange={swiper => setCount(swiper.realIndex + 1)}
         navigation={{
