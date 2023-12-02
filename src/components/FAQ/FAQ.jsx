@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { ReactComponent as AddIcon } from '../../img/faq/add.svg';
 import { ReactComponent as MinusIcon } from '../../img/faq/minus.svg';
+import { TouchLink } from '../Header/Header.styled';
+import ArrowIcon from '../../img/arrow.svg';
 
 const faqData = [
   {
@@ -58,6 +60,14 @@ function FAQ() {
           </li>
         ))}
       </ul>
+
+      <p>Didn't find the answer to your question? </p>
+      <TouchLink href="#">
+        Contact Us
+        <div>
+          <img src={ArrowIcon} alt="arrow icon" />
+        </div>
+      </TouchLink>
     </section>
   );
 }
