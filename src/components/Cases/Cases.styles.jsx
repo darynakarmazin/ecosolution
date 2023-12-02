@@ -33,10 +33,72 @@ export const CasesTitle = styled.h2`
   }
 `;
 
+export const CasesNavigation = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+`;
+
+export const CasesNavigationCount = styled.p`
+  color: rgba(23, 61, 51, 0.25);
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: -1.12px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+`;
+
+
+export const Buttons = styled.div`
+  display: flex;
+  gap: 12px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+`;
+
+
+export const CasesNavigationButton = styled.button`
+  display: inline-flex;
+  padding: 15px;
+  align-items: flex-start;
+  gap: 10px;
+  background: transparent;
+  border-radius: 100px;
+  border: 1px solid #173d33;
+
+  &:hover{
+    border: 1px solid #97D28B;
+    svg path {
+      stroke: #97d28b; 
+        }
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+`;
+
 export const CasesList = styled.ul`
   display: flex;
   overflow: hidden;
-//   flex-wrap: wrap;
+  //   flex-wrap: wrap;
   gap: 24px;
 
   @media screen and (min-width: 768px) {
@@ -154,11 +216,11 @@ export const CasesBottomInfo = styled.div`
     letter-spacing: -0.48px;
 
     @media screen and (min-width: 768px) {
-        font-size: 14px;
-      }
-    
-      @media screen and (min-width: 1280px) {
-        font-size: 16px;
-      }
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
 `;

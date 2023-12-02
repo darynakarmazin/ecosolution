@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { ReactComponent as ArrowTOPRight } from '../../img/cases/arrow-right.svg';
+import { ReactComponent as ArrowTOPRight } from '../../img/cases/arrow-top-right.svg';
+import { ReactComponent as ArrowLeft} from '../../img/cases/arrow-left.svg';
+import { ReactComponent as ArrowRight} from '../../img/cases/arrow-right.svg';
 import ZakhidnyiBuhImg1x from '../../img/cases/zakhidnyi-buh.jpg';
 import ZakhidnyiBuhImg2x from '../../img/cases/zakhidnyi-buh@2x.jpg';
 import BoschImg1x from '../../img/cases/bosch.jpg';
@@ -11,11 +13,15 @@ import HealthyFarmImg2x from '../../img/cases/healthy-farm@2x.jpg';
 import EnterpriseBiotechImg1x from '../../img/cases/enterprise-biotech.jpg';
 import EnterpriseBiotechImg2x from '../../img/cases/enterprise-biotech@2x.jpg';
 import {
+  Buttons,
   CasesBottomInfo,
   CasesDescription,
   CasesItem,
   CasesItemWrapper,
   CasesList,
+  CasesNavigation,
+  CasesNavigationButton,
+  CasesNavigationCount,
   CasesSection,
   CasesTitle,
 } from './Cases.styles';
@@ -23,6 +29,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
+import { Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
 
 function Cases() {
   const slides = [
@@ -85,19 +93,15 @@ function Cases() {
     <CasesSection>
       <CasesTitle>Successful cases of our company</CasesTitle>
 
-      <div>
-        <p>
-          <span>0{count}</span> /05
-        </p>
-        <div>
-          <button type="button" >
-            Prev
-          </button>
-          <button type="button" >
-            Next
-          </button>
-        </div>
-      </div>
+      <CasesNavigation>
+        <CasesNavigationCount>
+          <span style={{color: '#173D33'}}>0{count}</span> /05
+        </CasesNavigationCount>
+        <Buttons>
+          <CasesNavigationButton className='custom_prev' type="button"><ArrowLeft/></CasesNavigationButton>
+          <CasesNavigationButton className='custom_next' type="button"><ArrowRight/></CasesNavigationButton>
+        </Buttons>
+      </CasesNavigation>
 
       <Swiper
         spaceBetween={24}
@@ -105,9 +109,10 @@ function Cases() {
         loop={true}
         onSlideChange={swiper => setCount(swiper.realIndex + 1)}
         navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".custom_next",
+          prevEl: ".custom_prev"
         }}
+        modules={[Navigation]}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
