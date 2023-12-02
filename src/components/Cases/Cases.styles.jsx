@@ -12,6 +12,18 @@ export const CasesSection = styled.section`
   }
 `;
 
+export const CasesWrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 120px;
+  }
+`;
+
 export const CasesTitle = styled.h2`
   font-size: 28px;
   font-weight: 400;
@@ -22,14 +34,16 @@ export const CasesTitle = styled.h2`
 
   @media screen and (min-width: 768px) {
     font-size: 36px;
-    width: 264px;
-    margin-bottom: 38px;
+    width: 355px;
+    margin-bottom: 0;
+    padding-right: 90px;
+    border-right: 1px solid var(--hover-items-color);
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 48px;
-    width: 398px;
-    margin-bottom: 120px;
+    width: 619px;
+    padding-right: 221px;
   }
 `;
 
@@ -40,6 +54,7 @@ export const CasesNavigation = styled.div`
   margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
+    gap: 126px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -59,7 +74,6 @@ export const CasesNavigationCount = styled.p`
   }
 `;
 
-
 export const Buttons = styled.div`
   display: flex;
   gap: 12px;
@@ -71,9 +85,10 @@ export const Buttons = styled.div`
   }
 `;
 
-
 export const CasesNavigationButton = styled.button`
   display: inline-flex;
+  width: 66px;
+  height: 66px;
   padding: 15px;
   align-items: flex-start;
   gap: 10px;
@@ -81,17 +96,22 @@ export const CasesNavigationButton = styled.button`
   border-radius: 100px;
   border: 1px solid #173d33;
 
-  &:hover{
-    border: 1px solid #97D28B;
-    svg path {
-      stroke: #97d28b; 
-        }
-  }
-
-  @media screen and (min-width: 768px) {
-  }
-
   @media screen and (min-width: 1280px) {
+    padding: 24px;
+    width: 84px;
+    height: 84px;
+
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  &:hover {
+    border: 1px solid #97d28b;
+    svg path {
+      stroke: #97d28b;
+    }
   }
 `;
 

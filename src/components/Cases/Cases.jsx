@@ -24,6 +24,7 @@ import {
   CasesNavigationCount,
   CasesSection,
   CasesTitle,
+  CasesWrapper,
 } from './Cases.styles';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -91,6 +92,8 @@ function Cases() {
 
   return (
     <CasesSection>
+
+      <CasesWrapper>
       <CasesTitle>Successful cases of our company</CasesTitle>
 
       <CasesNavigation>
@@ -102,6 +105,7 @@ function Cases() {
           <CasesNavigationButton className='custom_next' type="button"><ArrowRight/></CasesNavigationButton>
         </Buttons>
       </CasesNavigation>
+      </CasesWrapper>
 
       <Swiper
         spaceBetween={24}
