@@ -19,6 +19,10 @@ import {
   CasesSection,
   CasesTitle,
 } from './Cases.styles';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
 
 function Cases() {
   const slides = [
@@ -26,7 +30,8 @@ function Cases() {
       image1x: ZakhidnyiBuhImg1x,
       image2x: ZakhidnyiBuhImg2x,
       alt: 'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”',
-      description: 'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”',
+      description:
+        'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”',
       info: {
         title: 'Wind Power for auto field irrigation',
         date: 'July 2023',
@@ -74,64 +79,78 @@ function Cases() {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? slides.length - 1 : prevIndex - 1));
-  };
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === slides.length - 1 ? 0 : prevIndex + 1));
-  };
+  const [count, setCount] = useState(1);
 
   return (
     <CasesSection>
       <CasesTitle>Successful cases of our company</CasesTitle>
+
       <div>
-        <span>{`${currentIndex + 1} / ${slides.length}`}</span>
+        <p>
+          <span>0{count}</span> /05
+        </p>
         <div>
-          <button onClick={handlePrev}>prev</button>
-          <button onClick={handleNext}>next</button>
+          <button type="button" >
+            Prev
+          </button>
+          <button type="button" >
+            Next
+          </button>
         </div>
       </div>
 
-      <CasesList>
+      <Swiper
+        spaceBetween={24}
+        slidesPerView={2}
+        loop={true}
+        onSlideChange={swiper => setCount(swiper.realIndex + 1)}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
+      >
         {slides.map((slide, index) => (
-          <li key={index}>
-            <CasesItem>
-              <picture>
-                <source
-                  media="(min-width: 1280px)"
-                  srcSet={`${slide.image1x} 1x, ${slide.image2x} 2x`}
-                  width="596"
-                  height="296px"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcSet={`${slide.image1x} 1x, ${slide.image2x} 2x`}
-                  width="342"
-                  height="168"
-                />
-                <source
-                  media="(max-width: 767px)"
-                  srcSet={`${slide.image1x} 1x, ${slide.image2x} 2x`}
-                />
-                <img src={slide.image1x} alt={slide.alt} />
-              </picture>
-              <CasesItemWrapper>
-                <CasesDescription>
-                  <p>{slide.description}</p>
-                  <button>
-                    <ArrowTOPRight />
-                  </button>
-                </CasesDescription>
-                <CasesBottomInfo>
-                  <p>{slide.info.title}</p>
-                  <p>{slide.info.date}</p>
-                </CasesBottomInfo>
-              </CasesItemWrapper>
-            </CasesItem>
-          </li>
+          <SwiperSlide key={index}>
+            <CasesList>
+              <li>
+                <CasesItem>
+                  <picture>
+                    <source
+                      media="(min-width: 1280px)"
+                      srcSet={`${slide.image1x} 1x, ${slide.image2x} 2x`}
+                      width="596"
+                      height="296px"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcSet={`${slide.image1x} 1x, ${slide.image2x} 2x`}
+                      width="342"
+                      height="168"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcSet={`${slide.image1x} 1x, ${slide.image2x} 2x`}
+                    />
+                    <img src={slide.image1x} alt={slide.alt} />
+                  </picture>
+                  <CasesItemWrapper>
+                    <CasesDescription>
+                      <p>{slide.description}</p>
+                      <button>
+                        <ArrowTOPRight />
+                      </button>
+                    </CasesDescription>
+                    <CasesBottomInfo>
+                      <p>{slide.info.title}</p>
+                      <p>{slide.info.date}</p>
+                    </CasesBottomInfo>
+                  </CasesItemWrapper>
+                </CasesItem>
+              </li>
+            </CasesList>
+          </SwiperSlide>
         ))}
-      </CasesList>
+      </Swiper>
     </CasesSection>
   );
 }
