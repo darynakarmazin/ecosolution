@@ -144,7 +144,7 @@ export const FaqAddinionalWrapper = styled.div`
   }
 `;
 
-export const FaqAddinionalLink = styled.a`
+export const FaqAddinionalLink = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
