@@ -177,7 +177,7 @@ function ContactUs() {
               placeholder="John Rosie"
               value={name}
               onChange={handleChange}
-              hasError={!!errors.name}
+              $hasError={!!errors.name}
             />
             {errors.name && <ErrorSpan>{errors.name}</ErrorSpan>}
           </Label>
@@ -189,7 +189,7 @@ function ContactUs() {
               placeholder="johnrosie@gmail.com"
               value={email}
               onChange={handleChange}
-              hasError={!!errors.email}
+              $hasError={!!errors.email}
             />
             {errors.email && <ErrorSpan>{errors.email}</ErrorSpan>}
           </Label>
@@ -201,7 +201,7 @@ function ContactUs() {
               placeholder="380961234567"
               value={phone}
               onChange={handleChange}
-              hasError={!!errors.phone}
+              $hasError={!!errors.phone}
             />
             {errors.phone && <ErrorSpan>{errors.phone}</ErrorSpan>}
           </Label>
@@ -213,7 +213,7 @@ function ContactUs() {
               placeholder="My message...."
               value={message}
               onChange={handleChange}
-              hasError={!!errors.message}
+              $hasError={!!errors.message}
             />
             {errors.message && <ErrorSpan>{errors.message}</ErrorSpan>}
           </Label>

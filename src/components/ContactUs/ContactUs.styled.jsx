@@ -152,7 +152,7 @@ export const Input = styled.input`
   outline: none;
   padding-bottom: 8px;
   border-bottom: 1px solid
-    ${props => (props.hasError ? '#D28B8B' : 'var(--hover-items-color)')};
+    ${props => (props.$hasError ? '#D28B8B' : 'var(--hover-items-color)')};
 `;
 
 export const Textarea = styled.textarea`
@@ -167,7 +167,7 @@ export const Textarea = styled.textarea`
   resize: none;
   padding-bottom: 8px;
   border-bottom: 1px solid
-    ${props => (props.hasError ? '#D28B8B' : 'var(--hover-items-color)')};
+    ${props => (props.$hasError ? '#D28B8B' : 'var(--hover-items-color)')};
 `;
 
 export const ButtonWrapper = styled.div`
