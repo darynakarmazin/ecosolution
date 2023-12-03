@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecosolution/static/css/main.5cb764d6.css",
-    "main.js": "/ecosolution/static/js/main.6d1dcc87.js",
+    "main.js": "/ecosolution/static/js/main.310c5511.js",
     "static/media/deck-wind-turbine-clean-energy@2x.jpg": "/ecosolution/static/media/deck-wind-turbine-clean-energy@2x.8e58061f272023586bd3.jpg",
     "static/media/tab-wind-turbine-clean-energy@2x.jpg": "/ecosolution/static/media/tab-wind-turbine-clean-energy@2x.ee592ecbfb9db6d97e90.jpg",
     "static/media/bosch@2x.jpg": "/ecosolution/static/media/bosch@2x.c2635824af773852d31d.jpg",
@@ -32,9 +32,12 @@
     "static/media/innovation.svg": "/ecosolution/static/media/innovation.e483f767e02fc382fb89209b71579ee6.svg",
     "static/media/responsibility.svg": "/ecosolution/static/media/responsibility.e20cb0fa1a0b3bb1ea550cf284427b54.svg",
     "static/media/quality.svg": "/ecosolution/static/media/quality.91f97cf95a567b1f73be2e9d63a041dd.svg",
+    "static/media/call.svg": "/ecosolution/static/media/call.abc1481fa3a417797357279d106cc250.svg",
+    "static/media/map.svg": "/ecosolution/static/media/map.89a78ff075cc8f899001e058ff10672b.svg",
     "static/media/openness.svg": "/ecosolution/static/media/openness.e09b2e717d0e2b3e1450b28fdf496960.svg",
     "index.html": "/ecosolution/index.html",
     "static/media/instagram.svg": "/ecosolution/static/media/instagram.6e44fb60b2bc0188a75401317260801f.svg",
+    "static/media/sms.svg": "/ecosolution/static/media/sms.2f0ecae6746d88b7a938d6b61c62e767.svg",
     "static/media/facebook.svg": "/ecosolution/static/media/facebook.7d3482cf4dc99aae8274300de788adcd.svg",
     "static/media/arrow.svg": "/ecosolution/static/media/arrow.67bf75548c387f415fae98bcfa940ecc.svg",
     "static/media/arrow-top-right.svg": "/ecosolution/static/media/arrow-top-right.23af8fdccacf7ae8f6da2b95d12736ca.svg",
@@ -45,10 +48,10 @@
     "static/media/menu.svg": "/ecosolution/static/media/menu.03e96d8790194653b6ccfb63ad04f462.svg",
     "static/media/minus.svg": "/ecosolution/static/media/minus.06823d08b7149db9f2adc6371ef81ae6.svg",
     "main.5cb764d6.css.map": "/ecosolution/static/css/main.5cb764d6.css.map",
-    "main.6d1dcc87.js.map": "/ecosolution/static/js/main.6d1dcc87.js.map"
+    "main.310c5511.js.map": "/ecosolution/static/js/main.310c5511.js.map"
   },
   "entrypoints": [
     "static/css/main.5cb764d6.css",
-    "static/js/main.6d1dcc87.js"
+    "static/js/main.310c5511.js"
   ]
 }
