@@ -81,16 +81,16 @@ export const ContactRow = styled.div`
     font-size: 20px;
     letter-spacing: -0.8px;
     max-width: 212px;
+
+    @media screen and (min-width: 1280px) {
+      max-width: 100%;
+    }
   }
 
   &:hover,
   :focus {
     svg path {
       stroke: var(--hover-items-color);
-    }
-
-    @media screen and (min-width: 1280px) {
-      max-width: 100%;
     }
   }
 `;
