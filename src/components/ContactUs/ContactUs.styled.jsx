@@ -22,15 +22,25 @@ export const ContactUsTitle = styled.h2`
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    display: none;
     font-size: 36px;
-    width: 347px;
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 48px;
-    width: 398px;
+    margin-bottom: 120px;
+  }
+`;
+
+export const ContactContainer = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 122px;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 178px;
   }
 `;
 
@@ -41,9 +51,11 @@ export const ContactList = styled.ul`
   margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
+    width: 244px;
   }
 
   @media screen and (min-width: 1280px) {
+    width: 466px;
   }
 `;
 
@@ -51,12 +63,6 @@ export const ContactListItem = styled.li`
   display: flex;
   flex-direction: column;
   gap: 8px;
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1280px) {
-  }
 `;
 
 export const ContactListTitle = styled.p`
@@ -75,6 +81,10 @@ export const ContactRow = styled.div`
     font-size: 20px;
     letter-spacing: -0.8px;
     max-width: 212px;
+
+    @media screen and (min-width: 1280px) {
+      max-width: 100%;
+    }
   }
 `;
 
@@ -84,6 +94,14 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 28px;
+
+  @media screen and (min-width: 768px) {
+    width: 342px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 596px;
+  }
 `;
 
 export const Label = styled.label`
