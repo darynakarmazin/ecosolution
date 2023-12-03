@@ -33,7 +33,7 @@ const schema = Yup.object().shape({
   phone: Yup.string()
     .matches(/^\d{10}$/, 'Please enter a valid phone number')
     .required('Phone number is required'),
-  message: Yup.string().required('Message is required'),
+  message: Yup.string(),
 });
 
 function ContactUs() {
