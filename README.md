@@ -35,7 +35,7 @@ Lighthouse report
 ![Lighthouse report](https://github.com/darynakarmazin/ecosolution/raw/main/src/img/img-1.png)
 
 Validation report
-![Lighthouse report](https://github.com/darynakarmazin/ecosolution/raw/main/src/img/img-2.png)
+![Validation report](https://github.com/darynakarmazin/ecosolution/raw/main/src/img/img-2.png)
 
 Decktop
 ![Validation report](https://github.com/darynakarmazin/ecosolution/raw/main/src/img/img-3.png)
