@@ -132,6 +132,7 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   gap: 12px;
+  background: transparent;
   border-radius: 500px;
   border: 1px solid var(--hover-items-color, #97d28b);
   color: #173d33;
