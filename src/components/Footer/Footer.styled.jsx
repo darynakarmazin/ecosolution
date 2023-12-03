@@ -46,6 +46,15 @@ export const Social = styled.div`
   justify-content: center;
   margin-bottom: 24px;
 
+  a {
+    &:hover,
+    :focus {
+      svg path {
+        stroke: var(--hover-items-color);
+      }
+    }
+  }
+
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 50%;

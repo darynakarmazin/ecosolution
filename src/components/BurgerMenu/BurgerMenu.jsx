@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import MenuIcon from '../../img/menu.svg';
-import { MenuButton } from './BurgerMenu.styled';
 import {
+  MenuButton,
   Backdrop,
   ButtonClose,
   ButtonWrp,
@@ -9,8 +9,8 @@ import {
   ModalContent,
   ModalItem,
   ModalList,
-} from './BurgerMenu.styles';
-import { Social } from '../Footer/Footer.styled';
+  Social,
+} from './BurgerMenu.styled';
 import { ReactComponent as Facebook } from '../../img/facebook.svg';
 import { ReactComponent as Instagram } from '../../img/instagram.svg';
 import { ReactComponent as CloseIcon } from '../../img/close-light.svg';
@@ -52,7 +52,7 @@ function BurgerMenu() {
                     </a>
                   </ModalItem>
                   <ModalItem>
-                    <a href="#main">
+                    <a href="#about">
                       <div>
                         About <ArrowRight />
                       </div>

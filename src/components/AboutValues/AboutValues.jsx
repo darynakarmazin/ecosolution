@@ -28,7 +28,7 @@ import SolarPanelsImgDeck2x from '../../img/about/desc-man-worker-firld-by-solar
 
 function AboutValues() {
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <AboutHeader>
         <AboutTitle>Main values of our company</AboutTitle>
         <AboutDescription>

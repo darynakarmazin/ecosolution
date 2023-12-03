@@ -13,6 +13,7 @@ import {
   ContactListItem,
   ContactListTitle,
   ContactRow,
+  ContactRowSocial,
   ContactUsSection,
   ContactUsTitle,
   Form,
@@ -116,10 +117,22 @@ function ContactUs() {
           </ContactListItem>
           <ContactListItem>
             <ContactListTitle>Social Networks:</ContactListTitle>
-            <ContactRow>
-              <Facebook />
-              <Instagram />
-            </ContactRow>
+            <ContactRowSocial>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.facebook.com/"
+              >
+                <Facebook />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.instagram.com/"
+              >
+                <Instagram />
+              </a>
+            </ContactRowSocial>
           </ContactListItem>
         </ContactList>
         <Form onSubmit={handleSubmit}>
@@ -131,6 +144,7 @@ function ContactUs() {
               placeholder="John Rosie"
               value={name}
               onChange={handleChange}
+              required
             />
           </Label>
           <Label>
@@ -141,6 +155,7 @@ function ContactUs() {
               placeholder="johnrosie@gmail.com"
               value={email}
               onChange={handleChange}
+              required
             />
           </Label>
           <Label>
@@ -151,6 +166,7 @@ function ContactUs() {
               placeholder="380961234567"
               value={phone}
               onChange={handleChange}
+              required
             />
           </Label>
           <Label>
@@ -161,6 +177,7 @@ function ContactUs() {
               placeholder="My message...."
               value={message}
               onChange={handleChange}
+              required
             />
           </Label>
           <ButtonWrapper>

@@ -59,7 +59,7 @@ function FAQ() {
   };
 
   return (
-    <FaqSection>
+    <FaqSection id="faq">
       <FaqTitle>Frequently Asked Questions</FaqTitle>
 
       <FaqList>
