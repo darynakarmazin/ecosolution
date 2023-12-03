@@ -23,14 +23,32 @@ import {
 } from './ContactUs.styled';
 import { useState } from 'react';
 
+import * as Yup from 'yup';
+const schema = Yup.object().shape({
+  name: Yup.string().required('Please enter your full name'),
+  email: Yup.string()
+    .email('Please enter a valid email address')
+    .required('Email is required'),
+  phone: Yup.string()
+    .matches(/^\d{10}$/, 'Please enter a valid phone number')
+    .required('Phone number is required'),
+  message: Yup.string().required('Message is required'),
+});
+
 function ContactUs() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+  const [errors, setErrors] = useState({});
 
   const handleChange = event => {
     const { name, value } = event.target;
+
+    setErrors(prevErrors => ({
+      ...prevErrors,
+      [name]: undefined,
+    }));
 
     switch (name) {
       case 'name':
@@ -50,22 +68,36 @@ function ContactUs() {
     }
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    console.log(
-      'Full name:',
-      name,
-      'E-mail:',
-      email,
-      'Phone:',
-      phone,
-      'Message:',
-      message
-    );
-    setName('');
-    setEmail('');
-    setPhone('');
-    setMessage('');
+
+    try {
+      await schema.validate(
+        { name, email, phone, message },
+        { abortEarly: false }
+      );
+      console.log(
+        'Full name:',
+        name,
+        'E-mail:',
+        email,
+        'Phone:',
+        phone,
+        'Message:',
+        message
+      );
+      setName('');
+      setEmail('');
+      setPhone('');
+      setMessage('');
+      setErrors({});
+    } catch (err) {
+      const validationErrors = {};
+      err.inner.forEach(error => {
+        validationErrors[error.path] = error.message;
+      });
+      setErrors(validationErrors);
+    }
   };
 
   return (
@@ -144,8 +176,11 @@ function ContactUs() {
               placeholder="John Rosie"
               value={name}
               onChange={handleChange}
-              required
+              hasError={!!errors.name}
             />
+            {errors.name && (
+              <span style={{ color: '#D28B8B' }}>{errors.name}</span>
+            )}
           </Label>
           <Label>
             * E-mail:
@@ -155,8 +190,11 @@ function ContactUs() {
               placeholder="johnrosie@gmail.com"
               value={email}
               onChange={handleChange}
-              required
+              hasError={!!errors.email}
             />
+            {errors.email && (
+              <span style={{ color: '#D28B8B' }}>{errors.email}</span>
+            )}
           </Label>
           <Label>
             * Phone:
@@ -166,8 +204,11 @@ function ContactUs() {
               placeholder="380961234567"
               value={phone}
               onChange={handleChange}
-              required
+              hasError={!!errors.phone}
             />
+            {errors.phone && (
+              <span style={{ color: '#D28B8B' }}>{errors.phone}</span>
+            )}
           </Label>
           <Label>
             Message:
@@ -177,8 +218,11 @@ function ContactUs() {
               placeholder="My message...."
               value={message}
               onChange={handleChange}
-              required
+              hasError={!!errors.message}
             />
+            {errors.message && (
+              <span style={{ color: '#D28B8B' }}>{errors.message}</span>
+            )}
           </Label>
           <ButtonWrapper>
             <Button type="submit">

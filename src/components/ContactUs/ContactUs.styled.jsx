@@ -136,8 +136,6 @@ export const Label = styled.label`
   display: flex;
   gap: 8px;
   flex-direction: column;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--hover-items-color);
   color: var(--main-font-color);
   font-family: var(--main-font);
   font-size: 16px;
@@ -152,6 +150,9 @@ export const Input = styled.input`
   font-size: 18px;
   letter-spacing: -0.72px;
   outline: none;
+  padding-bottom: 8px;
+  border-bottom: 1px solid
+    ${props => (props.hasError ? '#D28B8B' : 'var(--hover-items-color)')};
 `;
 
 export const Textarea = styled.textarea`
@@ -164,6 +165,9 @@ export const Textarea = styled.textarea`
   letter-spacing: -0.72px;
   outline: none;
   resize: none;
+  padding-bottom: 8px;
+  border-bottom: 1px solid
+    ${props => (props.hasError ? '#D28B8B' : 'var(--hover-items-color)')};
 `;
 
 export const ButtonWrapper = styled.div`
