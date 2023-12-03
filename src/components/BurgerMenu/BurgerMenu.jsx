@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import MenuIcon from '../../img/menu.svg';
 import {
   MenuButton,
@@ -18,6 +18,7 @@ import { ReactComponent as ArrowRight } from '../../img/cases/arrow-top-right.sv
 
 function BurgerMenu() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
 
   const handleModalOpen = () => {
     setIsModalOpen(true);
@@ -27,6 +28,27 @@ function BurgerMenu() {
     setIsModalOpen(false);
   };
 
+  useEffect(() => {
+    const sectionIds = ['main', 'about', 'cases', 'faq', 'contactUs'];
+
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      for (let i = sectionIds.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sectionIds[i]);
+        if (section.offsetTop - 50 <= scrollY) {
+          setActiveSection(sectionIds[i]);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <>
       <MenuButton onClick={handleModalOpen}>
@@ -45,35 +67,50 @@ function BurgerMenu() {
               <div>
                 <ModalList>
                   <ModalItem>
-                    <a href="#main">
+                    <a
+                      href="#main"
+                      className={activeSection === 'main' ? 'active' : ''}
+                    >
                       <div>
                         Main <ArrowRight />
                       </div>
                     </a>
                   </ModalItem>
                   <ModalItem>
-                    <a href="#about">
+                    <a
+                      href="#about"
+                      className={activeSection === 'about' ? 'active' : ''}
+                    >
                       <div>
                         About <ArrowRight />
                       </div>
                     </a>
                   </ModalItem>
                   <ModalItem>
-                    <a href="#cases">
+                    <a
+                      href="#cases"
+                      className={activeSection === 'cases' ? 'active' : ''}
+                    >
                       <div>
                         Cases <ArrowRight />
                       </div>
                     </a>
                   </ModalItem>
                   <ModalItem>
-                    <a href="#faq">
+                    <a
+                      href="#faq"
+                      className={activeSection === 'faq' ? 'active' : ''}
+                    >
                       <div>
                         FAQ <ArrowRight />
                       </div>
                     </a>
                   </ModalItem>
                   <ModalItem>
-                    <a href="#contactUs">
+                    <a
+                      href="#contactUs"
+                      className={activeSection === 'contactUs' ? 'active' : ''}
+                    >
                       <div>
                         Contact Us <ArrowRight />
                       </div>

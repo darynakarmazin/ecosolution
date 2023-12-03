@@ -103,17 +103,19 @@ export const ModalItem = styled.li`
     stroke: rgba(255, 255, 255, 0.25);
   }
 
-  &:hover {
-    color: #fff;
-    svg path {
-      stroke: #fff;
-    }
-  }
-
-  &:active {
+  .active {
     color: var(--hover-items-color);
     svg path {
       stroke: var(--hover-items-color);
+    }
+  }
+
+  &:hover {
+    a {
+      color: #fff;
+      svg path {
+        stroke: #fff;
+      }
     }
   }
 `;
