@@ -5,15 +5,64 @@ import { ReactComponent as Map } from '../../img/contact/map.svg';
 import { ReactComponent as Mail } from '../../img/contact/sms.svg';
 
 import {
+  Button,
   ContactList,
   ContactListItem,
   ContactListTitle,
   ContactRow,
   ContactUsSection,
   ContactUsTitle,
+  Form,
+  Input,
+  Textarea,
 } from './ContactUs.styled';
+import { useState } from 'react';
 
 function ContactUs() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleChange = event => {
+    const { name, value } = event.target;
+
+    switch (name) {
+      case 'name':
+        setName(value);
+        break;
+      case 'email':
+        setEmail(value);
+        break;
+      case 'phone':
+        setPhone(value);
+        break;
+      case 'message':
+        setMessage(value);
+        break;
+      default:
+        return;
+    }
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    console.log(
+      'Full name:',
+      name,
+      'E-mail:',
+      email,
+      'Phone:',
+      phone,
+      'Message:',
+      message
+    );
+    setName('');
+    setEmail('');
+    setPhone('');
+    setMessage('');
+  };
+
   return (
     <ContactUsSection id="contactUs">
       <ContactUsTitle>Contact us</ContactUsTitle>
@@ -68,7 +117,40 @@ function ContactUs() {
         </ContactListItem>
       </ContactList>
 
-      <form action=""></form>
+      <Form onSubmit={handleSubmit}>
+        <label>
+          * Full name:
+          <Input type="text" name="name" value={name} onChange={handleChange} />
+        </label>
+        <label>
+          * E-mail:
+          <Input
+            type="email"
+            name="email"
+            value={email}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          * Phone:
+          <Input
+            type="phone"
+            name="phone"
+            value={phone}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Message:
+          <Textarea
+            type="text"
+            name="message"
+            value={message}
+            onChange={handleChange}
+          />
+        </label>
+        <Button type="submit">Send</Button>
+      </Form>
     </ContactUsSection>
   );
 }

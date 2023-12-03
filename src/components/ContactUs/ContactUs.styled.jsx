@@ -76,3 +76,11 @@ export const ContactRow = styled.div`
     max-width: 212px;
   }
 `;
+
+export const Form = styled.form``;
+
+export const Input = styled.input``;
+
+export const Textarea = styled.textarea``;
+
+export const Button = styled.button``;
