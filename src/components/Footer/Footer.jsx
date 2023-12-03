@@ -1,13 +1,16 @@
-import LogoIcon from '../../img/logo.svg';
-import { Logo } from '../Header/Header.styled';
 import { ReactComponent as ArrowTop } from '../../img/arrow-up.svg';
 import { ReactComponent as Facebook } from '../../img/facebook.svg';
 import { ReactComponent as Instagram } from '../../img/instagram.svg';
+
+import { ReactComponent as Logo } from '../../img/logo/logo.svg';
+import { ReactComponent as Logo2 } from '../../img/logo/logo-part-2.svg';
+import { ReactComponent as Logo3 } from '../../img/logo/logo-part-3.svg';
 
 import {
   ContactLinks,
   FooterRow,
   FooterWrapper,
+  LogoLink,
   NavigationButton,
   Social,
   Wrapper,
@@ -19,10 +22,13 @@ function Footer() {
       <FooterRow>
         <Wrapper>
           <a href="/">
-            <Logo
-              src={LogoIcon}
-              alt="ecosolution company logo with phrase GREENERGY FOR LIFE"
-            />
+            <LogoLink>
+              <Logo />
+              <div>
+                <Logo2 />
+              </div>
+              <Logo3 />
+            </LogoLink>
           </a>
           <NavigationButton href="#" type="button">
             <ArrowTop />

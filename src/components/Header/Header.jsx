@@ -1,10 +1,12 @@
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
-import LogoIcon from '../../img/logo.svg';
+import { ReactComponent as Logo } from '../../img/logo/logo.svg';
+import { ReactComponent as Logo2 } from '../../img/logo/logo-part-2.svg';
+import { ReactComponent as Logo3 } from '../../img/logo/logo-part-3.svg';
 import ArrowIcon from '../../img/arrow.svg';
 import {
   FixedHeader,
   HeaderWrapper,
-  Logo,
+  LogoLink,
   SideButtons,
   TouchLink,
 } from './Header.styled';
@@ -30,10 +32,13 @@ function Header() {
     >
       <HeaderWrapper className="container">
         <a href="/">
-          <Logo
-            src={LogoIcon}
-            alt="ecosolution company logo with phrase GREENERGY FOR LIFE"
-          />
+          <LogoLink>
+            <Logo />
+            <div>
+              <Logo2 />
+            </div>
+            <Logo3 />
+          </LogoLink>
         </a>
 
         <SideButtons>

@@ -18,6 +18,21 @@ export const Wrapper = styled.div`
   margin-bottom: 24px;
 `;
 
+export const LogoLink = styled.div`
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+  &:hover,
+  :focus {
+    div {
+      svg path {
+        fill: #97d28b;
+      }
+    }
+  }
+`;
+
 export const FooterRow = styled.div`
   width: 100%;
   gap: 9px;

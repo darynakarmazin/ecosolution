@@ -16,9 +16,19 @@ export const HeaderWrapper = styled.div`
   padding-bottom: 36px;
 `;
 
-export const Logo = styled.img`
-  width: 269px;
-  height: 40px;
+export const LogoLink = styled.div`
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+  &:hover,
+  :focus {
+    div {
+      svg path {
+        fill: #97d28b;
+      }
+    }
+  }
 `;
 
 export const SideButtons = styled.div`
