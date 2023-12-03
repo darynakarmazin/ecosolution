@@ -29,6 +29,20 @@ function BurgerMenu() {
   };
 
   useEffect(() => {
+    const handleOnClose = e => {
+      if (e.code === 'Escape') {
+        handleModalClose();
+      }
+    };
+
+    window.addEventListener('keydown', handleOnClose);
+
+    return () => {
+      window.removeEventListener('keydown', handleOnClose);
+    };
+  }, []);
+
+  useEffect(() => {
     const sectionIds = ['main', 'about', 'cases', 'faq', 'contactUs'];
 
     const handleScroll = () => {
