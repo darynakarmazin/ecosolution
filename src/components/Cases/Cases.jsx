@@ -168,7 +168,7 @@ function Cases() {
                   <CasesItemWrapper>
                     <CasesDescription>
                       <p>{slide.description}</p>
-                      <button>
+                      <button aria-label="See more">
                         <ArrowTOPRight />
                       </button>
                     </CasesDescription>

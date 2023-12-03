@@ -218,7 +218,7 @@ function ContactUs() {
             {errors.message && <ErrorSpan>{errors.message}</ErrorSpan>}
           </Label>
           <ButtonWrapper>
-            <Button type="submit" aria-label="send form">
+            <Button type="submit" aria-label="Submit form">
               Send
               <div>
                 <img src={ArrowRightIcon} alt="arrow right icon" />
