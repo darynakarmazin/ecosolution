@@ -38,6 +38,7 @@ export const ContactList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
   }
@@ -77,10 +78,88 @@ export const ContactRow = styled.div`
   }
 `;
 
-export const Form = styled.form``;
+export const Form = styled.form`
+  background-color: var(--secondary-background-color);
+  padding: 36px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+`;
 
-export const Input = styled.input``;
+export const Label = styled.label`
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--hover-items-color);
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+  font-size: 16px;
+  letter-spacing: -0.64px;
+`;
 
-export const Textarea = styled.textarea``;
+export const Input = styled.input`
+  background-color: transparent;
+  border: none;
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+  font-size: 18px;
+  letter-spacing: -0.72px;
+  outline: none;
+`;
 
-export const Button = styled.button``;
+export const Textarea = styled.textarea`
+  height: 124px;
+  background-color: transparent;
+  border: none;
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+  font-size: 18px;
+  letter-spacing: -0.72px;
+  outline: none;
+  resize: none;
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
+
+export const Button = styled.button`
+  display: inline-flex;
+  height: 39px;
+  padding: 4px 4px 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 500px;
+  border: 1px solid var(--hover-items-color, #97d28b);
+  color: #173d33;
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.13;
+  letter-spacing: -0.64px;
+  transition: var(--transition-dur-and-func);
+
+  div {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #97d28b;
+    transition: var(--transition-dur-and-func);
+  }
+
+  &:hover,
+  :focus {
+    border: 1px solid var(--main-font-color, #173d33);
+    background: var(--main-font-color, #173d33);
+    color: var(--hover-items-color, #97d28b);
+
+    div {
+      background: var(--hover-items-color, #97d28b);
+    }
+  }
+`;

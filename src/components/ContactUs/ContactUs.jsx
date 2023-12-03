@@ -4,8 +4,10 @@ import { ReactComponent as Call } from '../../img/contact/call.svg';
 import { ReactComponent as Map } from '../../img/contact/map.svg';
 import { ReactComponent as Mail } from '../../img/contact/sms.svg';
 
+import ArrowRightIcon from '../../img/arrow-right.svg';
 import {
   Button,
+  ButtonWrapper,
   ContactList,
   ContactListItem,
   ContactListTitle,
@@ -14,6 +16,7 @@ import {
   ContactUsTitle,
   Form,
   Input,
+  Label,
   Textarea,
 } from './ContactUs.styled';
 import { useState } from 'react';
@@ -118,38 +121,54 @@ function ContactUs() {
       </ContactList>
 
       <Form onSubmit={handleSubmit}>
-        <label>
+        <Label>
           * Full name:
-          <Input type="text" name="name" value={name} onChange={handleChange} />
-        </label>
-        <label>
+          <Input
+            type="text"
+            name="name"
+            placeholder="John Rosie"
+            value={name}
+            onChange={handleChange}
+          />
+        </Label>
+        <Label>
           * E-mail:
           <Input
             type="email"
             name="email"
+            placeholder="johnrosie@gmail.com"
             value={email}
             onChange={handleChange}
           />
-        </label>
-        <label>
+        </Label>
+        <Label>
           * Phone:
           <Input
             type="phone"
             name="phone"
+            placeholder="380961234567"
             value={phone}
             onChange={handleChange}
           />
-        </label>
-        <label>
+        </Label>
+        <Label>
           Message:
           <Textarea
             type="text"
             name="message"
+            placeholder="My message...."
             value={message}
             onChange={handleChange}
           />
-        </label>
-        <Button type="submit">Send</Button>
+        </Label>
+        <ButtonWrapper>
+          <Button type="submit">
+            Send
+            <div>
+              <img src={ArrowRightIcon} alt="arrow right icon" />
+            </div>
+          </Button>
+        </ButtonWrapper>
       </Form>
     </ContactUsSection>
   );
