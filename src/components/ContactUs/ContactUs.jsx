@@ -155,6 +155,7 @@ function ContactUs() {
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.facebook.com/"
+                aria-label="Visit our Facebook page"
               >
                 <Facebook />
               </a>
@@ -162,6 +163,7 @@ function ContactUs() {
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.instagram.com/"
+                aria-label="Visit our Instagram profile"
               >
                 <Instagram />
               </a>
@@ -218,8 +220,8 @@ function ContactUs() {
             {errors.message && <ErrorSpan>{errors.message}</ErrorSpan>}
           </Label>
           <ButtonWrapper>
-            <Button type="submit" aria-label="Send">
-              Send
+            <Button type="submit">
+              <span aria-label="Send">Send</span>
               <div>
                 <img src={ArrowRightIcon} alt="arrow right icon" />
               </div>

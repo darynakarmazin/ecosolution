@@ -31,7 +31,7 @@ function Header() {
       style={{ backgroundColor: isScrolled ? '#ffffff' : '#F3F5FA' }}
     >
       <HeaderWrapper className="container">
-        <a href="/">
+        <a href="/" aria-label="Go to the homepage">
           <LogoLink>
             <Logo />
             <div>

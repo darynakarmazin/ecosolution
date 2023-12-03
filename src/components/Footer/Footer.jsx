@@ -21,7 +21,7 @@ function Footer() {
     <FooterWrapper className="container">
       <FooterRow>
         <Wrapper>
-          <a href="/">
+          <a href="/" aria-label="Go to the homepage">
             <LogoLink>
               <Logo />
               <div>
@@ -30,15 +30,25 @@ function Footer() {
               <Logo3 />
             </LogoLink>
           </a>
-          <NavigationButton href="#" type="button">
+          <NavigationButton href="#" type="button" aria-label="Go to Top">
             <ArrowTop />
           </NavigationButton>
         </Wrapper>
         <Social>
-          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.facebook.com/"
+            aria-label="Visit our Facebook page"
+          >
             <Facebook />
           </a>
-          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/"
+            aria-label="Visit our Instagram profile"
+          >
             <Instagram />
           </a>
         </Social>
