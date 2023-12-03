@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecosolution/static/css/main.5cb764d6.css",
-    "main.js": "/ecosolution/static/js/main.bd65a0ef.js",
+    "main.js": "/ecosolution/static/js/main.6d1dcc87.js",
     "static/media/deck-wind-turbine-clean-energy@2x.jpg": "/ecosolution/static/media/deck-wind-turbine-clean-energy@2x.8e58061f272023586bd3.jpg",
     "static/media/tab-wind-turbine-clean-energy@2x.jpg": "/ecosolution/static/media/tab-wind-turbine-clean-energy@2x.ee592ecbfb9db6d97e90.jpg",
     "static/media/bosch@2x.jpg": "/ecosolution/static/media/bosch@2x.c2635824af773852d31d.jpg",
@@ -26,7 +26,9 @@
     "static/media/mob-wind-turbine-clean-energy.jpg": "/ecosolution/static/media/mob-wind-turbine-clean-energy.305ae12646f540bf9566.jpg",
     "static/media/tab-man-worker-firld-by-solar-panels.jpg": "/ecosolution/static/media/tab-man-worker-firld-by-solar-panels.223e4b4aa40e10bcab61.jpg",
     "static/media/tab-wind-farms-fields.jpg": "/ecosolution/static/media/tab-wind-farms-fields.fd704129bb5d93d555a9.jpg",
-    "static/media/logo.svg": "/ecosolution/static/media/logo.638cc1bbcbc5b1a1aa81d1a7b58d7833.svg",
+    "static/media/logo-part-3.svg": "/ecosolution/static/media/logo-part-3.1f511e4a32a0e77bfb6e16d43805e044.svg",
+    "static/media/logo-part-2.svg": "/ecosolution/static/media/logo-part-2.2cc003d493fa51a2189af844ed21c6f5.svg",
+    "static/media/logo.svg": "/ecosolution/static/media/logo.1671744e309061778639b5f8230086ba.svg",
     "static/media/innovation.svg": "/ecosolution/static/media/innovation.e483f767e02fc382fb89209b71579ee6.svg",
     "static/media/responsibility.svg": "/ecosolution/static/media/responsibility.e20cb0fa1a0b3bb1ea550cf284427b54.svg",
     "static/media/quality.svg": "/ecosolution/static/media/quality.91f97cf95a567b1f73be2e9d63a041dd.svg",
@@ -43,10 +45,10 @@
     "static/media/menu.svg": "/ecosolution/static/media/menu.03e96d8790194653b6ccfb63ad04f462.svg",
     "static/media/minus.svg": "/ecosolution/static/media/minus.06823d08b7149db9f2adc6371ef81ae6.svg",
     "main.5cb764d6.css.map": "/ecosolution/static/css/main.5cb764d6.css.map",
-    "main.bd65a0ef.js.map": "/ecosolution/static/js/main.bd65a0ef.js.map"
+    "main.6d1dcc87.js.map": "/ecosolution/static/js/main.6d1dcc87.js.map"
   },
   "entrypoints": [
     "static/css/main.5cb764d6.css",
-    "static/js/main.bd65a0ef.js"
+    "static/js/main.6d1dcc87.js"
   ]
 }
