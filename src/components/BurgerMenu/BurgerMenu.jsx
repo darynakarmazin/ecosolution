@@ -66,7 +66,11 @@ function BurgerMenu() {
   return (
     <>
       <MenuButton onClick={handleModalOpen}>
-        <img src={MenuIcon} alt="button for opening menu" />
+        <img
+          src={MenuIcon}
+          alt="button for opening menu"
+          aria-label="button for opening menu"
+        />
       </MenuButton>
 
       {isModalOpen && (
@@ -74,7 +78,10 @@ function BurgerMenu() {
           <Modal className="container">
             <ModalContent>
               <ButtonWrp>
-                <ButtonClose onClick={handleModalClose}>
+                <ButtonClose
+                  onClick={handleModalClose}
+                  aria-label="button for closing menu"
+                >
                   <CloseIcon /> close
                 </ButtonClose>
               </ButtonWrp>

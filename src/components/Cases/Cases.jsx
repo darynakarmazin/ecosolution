@@ -112,10 +112,18 @@ function Cases() {
             <span style={{ color: '#173D33' }}>0{count}</span> /05
           </CasesNavigationCount>
           <Buttons>
-            <CasesNavigationButton className="custom_prev" type="button">
+            <CasesNavigationButton
+              className="custom_prev"
+              type="button"
+              aria-label="Previous slide"
+            >
               <ArrowLeft />
             </CasesNavigationButton>
-            <CasesNavigationButton className="custom_next" type="button">
+            <CasesNavigationButton
+              className="custom_next"
+              type="button"
+              aria-label="Next slide"
+            >
               <ArrowRight />
             </CasesNavigationButton>
           </Buttons>
