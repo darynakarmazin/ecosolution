@@ -16,6 +16,7 @@ import {
   ContactRowSocial,
   ContactUsSection,
   ContactUsTitle,
+  ErrorSpan,
   Form,
   Input,
   Label,
@@ -178,9 +179,7 @@ function ContactUs() {
               onChange={handleChange}
               hasError={!!errors.name}
             />
-            {errors.name && (
-              <span style={{ color: '#D28B8B' }}>{errors.name}</span>
-            )}
+            {errors.name && <ErrorSpan>{errors.name}</ErrorSpan>}
           </Label>
           <Label>
             * E-mail:
@@ -192,9 +191,7 @@ function ContactUs() {
               onChange={handleChange}
               hasError={!!errors.email}
             />
-            {errors.email && (
-              <span style={{ color: '#D28B8B' }}>{errors.email}</span>
-            )}
+            {errors.email && <ErrorSpan>{errors.email}</ErrorSpan>}
           </Label>
           <Label>
             * Phone:
@@ -206,9 +203,7 @@ function ContactUs() {
               onChange={handleChange}
               hasError={!!errors.phone}
             />
-            {errors.phone && (
-              <span style={{ color: '#D28B8B' }}>{errors.phone}</span>
-            )}
+            {errors.phone && <ErrorSpan>{errors.phone}</ErrorSpan>}
           </Label>
           <Label>
             Message:
@@ -220,9 +215,7 @@ function ContactUs() {
               onChange={handleChange}
               hasError={!!errors.message}
             />
-            {errors.message && (
-              <span style={{ color: '#D28B8B' }}>{errors.message}</span>
-            )}
+            {errors.message && <ErrorSpan>{errors.message}</ErrorSpan>}
           </Label>
           <ButtonWrapper>
             <Button type="submit">

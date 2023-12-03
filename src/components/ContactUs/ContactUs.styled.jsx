@@ -214,3 +214,11 @@ export const Button = styled.button`
     }
   }
 `;
+
+export const ErrorSpan = styled.span`
+  color: #d28b8b;
+  text-align: end;
+  font-family: var(--main-font);
+  font-size: 12px;
+  letter-spacing: -0.48px;
+`;
