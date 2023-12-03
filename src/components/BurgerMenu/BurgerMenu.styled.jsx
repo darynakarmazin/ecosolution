@@ -99,6 +99,12 @@ export const ModalItem = styled.li`
   font-family: var(--main-font);
   font-size: 24px;
   letter-spacing: -0.96px;
+  a {
+    div {
+      display: flex;
+      gap: 8px;
+    }
+  }
   svg path {
     stroke: rgba(255, 255, 255, 0.25);
   }
