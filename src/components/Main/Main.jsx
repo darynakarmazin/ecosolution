@@ -18,7 +18,7 @@ import DescwindTurbine2x from '../../img/main/deck-wind-turbine-clean-energy@2x.
 
 function Main() {
   return (
-    <MainSection>
+    <MainSection id="main">
       <MainWrapper>
         <MainHeader>RENEWABLE ENERGY For any task</MainHeader>
         <div>
