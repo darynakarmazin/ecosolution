@@ -6,6 +6,7 @@ import { ReactComponent as Instagram } from '../../img/instagram.svg';
 
 import {
   ContactLinks,
+  FooterRow,
   FooterWrapper,
   NavigationButton,
   Social,
@@ -15,21 +16,27 @@ import {
 function Footer() {
   return (
     <FooterWrapper className="container">
-      <Wrapper>
-        <a href="./">
-          <Logo
-            src={LogoIcon}
-            alt="ecosolution company logo with phrase GREENERGY FOR LIFE"
-          />
-        </a>
-        <NavigationButton className="custom_prev" type="button">
-          <ArrowTop />
-        </NavigationButton>
-      </Wrapper>
-      <Social>
-        <Instagram />
-        <Facebook />
-      </Social>
+      <FooterRow>
+        <Wrapper>
+          <a href="/">
+            <Logo
+              src={LogoIcon}
+              alt="ecosolution company logo with phrase GREENERGY FOR LIFE"
+            />
+          </a>
+          <NavigationButton href="#" type="button">
+            <ArrowTop />
+          </NavigationButton>
+        </Wrapper>
+        <Social>
+          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/">
+            <Facebook />
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/">
+            <Instagram />
+          </a>
+        </Social>
+      </FooterRow>
       <ContactLinks>
         <a
           target="_blank"

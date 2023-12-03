@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ReactComponent as ArrowTOPRight } from '../../img/cases/arrow-top-right.svg';
-import { ReactComponent as ArrowLeft} from '../../img/cases/arrow-left.svg';
-import { ReactComponent as ArrowRight} from '../../img/cases/arrow-right.svg';
+import { ReactComponent as ArrowLeft } from '../../img/cases/arrow-left.svg';
+import { ReactComponent as ArrowRight } from '../../img/cases/arrow-right.svg';
 import ZakhidnyiBuhImg1x from '../../img/cases/zakhidnyi-buh.jpg';
 import ZakhidnyiBuhImg2x from '../../img/cases/zakhidnyi-buh@2x.jpg';
 import BoschImg1x from '../../img/cases/bosch.jpg';
@@ -98,25 +98,28 @@ function Cases() {
 
   if (isMobile) {
     slidesPerView = 1;
-  } else  {
+  } else {
     slidesPerView = 2;
   }
 
   return (
-    <CasesSection>
-
+    <CasesSection id="cases">
       <CasesWrapper>
-      <CasesTitle>Successful cases of our company</CasesTitle>
+        <CasesTitle>Successful cases of our company</CasesTitle>
 
-      <CasesNavigation>
-        <CasesNavigationCount>
-          <span style={{color: '#173D33'}}>0{count}</span> /05
-        </CasesNavigationCount>
-        <Buttons>
-          <CasesNavigationButton className='custom_prev' type="button"><ArrowLeft/></CasesNavigationButton>
-          <CasesNavigationButton className='custom_next' type="button"><ArrowRight/></CasesNavigationButton>
-        </Buttons>
-      </CasesNavigation>
+        <CasesNavigation>
+          <CasesNavigationCount>
+            <span style={{ color: '#173D33' }}>0{count}</span> /05
+          </CasesNavigationCount>
+          <Buttons>
+            <CasesNavigationButton className="custom_prev" type="button">
+              <ArrowLeft />
+            </CasesNavigationButton>
+            <CasesNavigationButton className="custom_next" type="button">
+              <ArrowRight />
+            </CasesNavigationButton>
+          </Buttons>
+        </CasesNavigation>
       </CasesWrapper>
 
       <Swiper
@@ -125,8 +128,8 @@ function Cases() {
         loop={true}
         onSlideChange={swiper => setCount(swiper.realIndex + 1)}
         navigation={{
-          nextEl: ".custom_next",
-          prevEl: ".custom_prev"
+          nextEl: '.custom_next',
+          prevEl: '.custom_prev',
         }}
         modules={[Navigation]}
       >

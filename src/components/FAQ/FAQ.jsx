@@ -84,7 +84,7 @@ function FAQ() {
         <FaqTitleTab>Frequently Asked Questions</FaqTitleTab>
         <FaqAddinionalLink>
           <FaqAddQues>Didn't find the answer to your question? </FaqAddQues>
-          <TouchLink href="#">
+          <TouchLink href="#contactUs">
             Contact Us
             <div>
               <img src={ArrowIcon} alt="arrow icon" />

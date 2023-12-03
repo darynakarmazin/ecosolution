@@ -29,14 +29,16 @@ function Header() {
       style={{ backgroundColor: isScrolled ? '#ffffff' : '#F3F5FA' }}
     >
       <HeaderWrapper className="container">
-        <Logo
-          src={LogoIcon}
-          alt="ecosolution company logo with phrase GREENERGY FOR LIFE"
-        />
+        <a href="/">
+          <Logo
+            src={LogoIcon}
+            alt="ecosolution company logo with phrase GREENERGY FOR LIFE"
+          />
+        </a>
 
         <SideButtons>
           <BurgerMenu />
-          <TouchLink href="#">
+          <TouchLink href="#contactUs">
             Get in touch
             <div>
               <img src={ArrowIcon} alt="arrow icon" />

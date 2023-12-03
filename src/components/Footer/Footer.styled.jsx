@@ -18,12 +18,31 @@ export const Wrapper = styled.div`
   margin-bottom: 24px;
 `;
 
-export const Social = styled.div`
-  display: flex;
-  margin-bottom: 24px;
+export const FooterRow = styled.div`
+  width: 100%;
+  gap: 9px;
+  align-items: center;
+  position: relative;
 `;
 
-export const NavigationButton = styled.button`
+export const Social = styled.div`
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(100%, -50%);
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+`;
+
+export const NavigationButton = styled.a`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -52,6 +71,20 @@ export const NavigationButton = styled.button`
 
 export const ContactLinks = styled.nav`
   display: flex;
+  gap: 16px;
   flex-direction: column;
   align-items: center;
+  color: var(--main-font-color);
+  font-family: var(--main-font);
+  font-size: 16px;
+  letter-spacing: -0.64px;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
 `;

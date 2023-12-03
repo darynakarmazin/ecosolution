@@ -1,5 +1,9 @@
 @import-normalize; /* bring in normalize.css styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* Font colors */
   --main-font-color: #173d33;
