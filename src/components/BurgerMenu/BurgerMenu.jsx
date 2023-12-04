@@ -28,6 +28,12 @@ function BurgerMenu() {
     setIsModalOpen(false);
   };
 
+  const handleOverlyClick = e => {
+    if (e.currentTarget === e.target) {
+      handleModalClose();
+    }
+  };
+
   useEffect(() => {
     const handleOnClose = e => {
       if (e.code === 'Escape') {
@@ -74,8 +80,8 @@ function BurgerMenu() {
       </MenuButton>
 
       {isModalOpen && (
-        <Backdrop>
-          <Modal className="container">
+        <Backdrop onClick={handleOverlyClick}>
+          <Modal className="container" onClick={handleOverlyClick}>
             <ModalContent>
               <ButtonWrp>
                 <ButtonClose
