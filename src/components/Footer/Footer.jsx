@@ -10,19 +10,19 @@ import {
   ContactLinks,
   FooterRow,
   FooterWrapper,
+  LogoBtn,
   LogoLink,
   NavigationButton,
   Social,
   Wrapper,
 } from './Footer.styled';
-import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <FooterWrapper className="container">
       <FooterRow>
         <Wrapper>
-          <Link href="/" aria-label="Go to the homepage">
+          <LogoBtn href="#" aria-label="Go to the homepage">
             <LogoLink>
               <Logo />
               <div>
@@ -30,7 +30,7 @@ function Footer() {
               </div>
               <Logo3 />
             </LogoLink>
-          </Link>
+          </LogoBtn>
           <NavigationButton href="#" type="button" aria-label="Go to Top">
             <ArrowTop />
           </NavigationButton>

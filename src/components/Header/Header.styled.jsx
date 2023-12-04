@@ -16,6 +16,8 @@ export const HeaderWrapper = styled.div`
   padding-bottom: 36px;
 `;
 
+export const LogoBtn = styled.a``;
+
 export const LogoLink = styled.div`
   display: flex;
   gap: 4px;

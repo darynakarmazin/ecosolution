@@ -6,12 +6,12 @@ import ArrowIcon from '../../img/arrow.svg';
 import {
   FixedHeader,
   HeaderWrapper,
+  LogoBtn,
   LogoLink,
   SideButtons,
   TouchLink,
 } from './Header.styled';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +32,7 @@ function Header() {
       style={{ backgroundColor: isScrolled ? '#ffffff' : '#F3F5FA' }}
     >
       <HeaderWrapper className="container">
-        <Link href="/" aria-label="Go to the homepage">
+        <LogoBtn href="#" aria-label="Go to the homepage">
           <LogoLink>
             <Logo />
             <div>
@@ -40,7 +40,7 @@ function Header() {
             </div>
             <Logo3 />
           </LogoLink>
-        </Link>
+        </LogoBtn>
 
         <SideButtons>
           <BurgerMenu />

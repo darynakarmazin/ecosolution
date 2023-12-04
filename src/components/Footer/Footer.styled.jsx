@@ -18,6 +18,8 @@ export const Wrapper = styled.div`
   margin-bottom: 24px;
 `;
 
+export const LogoBtn = styled.a``;
+
 export const LogoLink = styled.div`
   display: flex;
   gap: 4px;
