@@ -32,7 +32,7 @@ Test task. Landing Ecosolution in accordance with the technical task. Frontend t
 Teclology stack [React, Git, html5, styled-components, gh-pages, css3, react-icons, css-variables, react-responsive, react-hooks, usestate]
 
 Lighthouse report
-![Lighthouse report](https://github.com/darynakarmazin/ecosolution/raw/main/src/img/img-1.png)
+![Lighthouse report](https://github.com/darynakarmazin/ecosolution/raw/main/src/img/img.png)
 
 Validation report
 ![Validation report](https://github.com/darynakarmazin/ecosolution/raw/main/src/img/img-2.png)
