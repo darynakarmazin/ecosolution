@@ -3,17 +3,17 @@ import styled from 'styled-components';
 export const FaqSection = styled.section`
   display: flex;
   flex-direction: column;
-  padding-bottom: 36px;
+  padding-top: 36px;
 
   @media screen and (min-width: 768px) {
     gap: 24px;
     flex-direction: row;
-    padding-bottom: 100px;
+    padding-top: 100px;
   }
 
   @media screen and (min-width: 1280px) {
     gap: 185px;
-    padding-bottom: 124px;
+    padding-top: 120px;
   }
 `;
 

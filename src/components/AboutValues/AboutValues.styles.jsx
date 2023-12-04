@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const AboutSection = styled.section`
-  padding-bottom: 36px;
+  padding-top: 36px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 100px;
+    padding-top: 100px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-bottom: 120px;
+    padding-top: 120px;
   }
 `;
 
@@ -61,21 +61,19 @@ export const AboutDescription = styled.p`
   }
 `;
 
-export const GridContainer= styled.div`
+export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 24px;
 
-      @media screen and (min-width: 768px) {
-          grid-template-columns: repeat(4, 1fr);
-      }
-      @media screen and (min-width: 1280px) {
-          grid-template-columns: repeat(4, 1fr);
-          grid-gap: 48px;
-      }
-
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 48px;
+  }
 `;
-
 
 export const Card = styled.div`
   padding: 12px;

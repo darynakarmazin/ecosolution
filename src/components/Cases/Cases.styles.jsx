@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const CasesSection = styled.section`
-  padding-bottom: 36px;
+  padding-top: 36px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 100px;
+    padding-top: 100px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-bottom: 124px;
+    padding-top: 120px;
   }
 `;
 

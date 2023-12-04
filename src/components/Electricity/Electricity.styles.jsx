@@ -4,14 +4,14 @@ export const ElectricitySection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 36px;
+  padding-top: 36px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 100px;
+    padding-top: 100px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-bottom: 120px;
+    padding-top: 120px;
   }
 `;
 

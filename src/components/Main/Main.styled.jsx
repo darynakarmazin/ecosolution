@@ -2,16 +2,13 @@ import styled from 'styled-components';
 
 export const MainSection = styled.section`
   padding-top: 110px;
-  padding-bottom: 36px;
 
   @media screen and (min-width: 768px) {
     padding-top: 132px;
-    padding-bottom: 100px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 173px;
-    padding-bottom: 124px;
   }
 `;
 
