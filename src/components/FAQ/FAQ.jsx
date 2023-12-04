@@ -41,7 +41,9 @@ function FAQ() {
               {openIndex === index ? <MinusIcon /> : <AddIcon />}
             </FaqButton>
             <FaqQuestionWrapper>
-              <FaqQuestion>{item.question}</FaqQuestion>
+              <FaqQuestion onClick={() => handleToggle(index)}>
+                {item.question}
+              </FaqQuestion>
               {openIndex === index && <FaqAnsver>{item.answer}</FaqAnsver>}
             </FaqQuestionWrapper>
           </FaqListItem>

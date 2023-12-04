@@ -112,6 +112,7 @@ export const FaqQuestion = styled.p`
   text-align: justify;
   font-size: 18px;
   letter-spacing: -0.72px;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
   }
