@@ -11,6 +11,7 @@ import {
   TouchLink,
 } from './Header.styled';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +32,7 @@ function Header() {
       style={{ backgroundColor: isScrolled ? '#ffffff' : '#F3F5FA' }}
     >
       <HeaderWrapper className="container">
-        <a href="/" aria-label="Go to the homepage">
+        <Link href="/" aria-label="Go to the homepage">
           <LogoLink>
             <Logo />
             <div>
@@ -39,7 +40,7 @@ function Header() {
             </div>
             <Logo3 />
           </LogoLink>
-        </a>
+        </Link>
 
         <SideButtons>
           <BurgerMenu />

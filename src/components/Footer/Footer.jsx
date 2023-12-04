@@ -15,13 +15,14 @@ import {
   Social,
   Wrapper,
 } from './Footer.styled';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <FooterWrapper className="container">
       <FooterRow>
         <Wrapper>
-          <a href="/" aria-label="Go to the homepage">
+          <Link href="/" aria-label="Go to the homepage">
             <LogoLink>
               <Logo />
               <div>
@@ -29,7 +30,7 @@ function Footer() {
               </div>
               <Logo3 />
             </LogoLink>
-          </a>
+          </Link>
           <NavigationButton href="#" type="button" aria-label="Go to Top">
             <ArrowTop />
           </NavigationButton>
