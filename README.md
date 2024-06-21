@@ -29,7 +29,7 @@ https://www.figma.com/file/pTbhAbEXjsofeQHmtIE2tK/Ecosolution?type=design&node-i
 ## Learn More
 Test task. Landing Ecosolution in accordance with the technical task. Frontend test task. Completed the frontend test task, I successfully developed a responsive landing page for Ecosolution using React. The page adheres to the provided design and technical specifications, featuring a fixed header with smooth scrolling, a burger menu with smooth scrolling navigation, automated value counters, an infinite slider for cases, a validated form in the Contact Us section, and a footer with a back-to-top arrow. The code is clean, well-structured, and follows best practices for accessibility, semantic markup, and responsiveness across various devices. The project is hosted on github.com for easy access and review.
 
-Teclology stack [React, Git, html5, styled-components, gh-pages, css3, react-icons, css-variables, react-responsive, react-hooks, usestate]
+Technology stack [React, Git, html5, styled-components, gh-pages, css3, react-icons, css-variables, react-responsive, react-hooks, usestate]
 
 Lighthouse report
 ![Lighthouse report](https://github.com/darynakarmazin/ecosolution/raw/main/src/img/img-1.png)
